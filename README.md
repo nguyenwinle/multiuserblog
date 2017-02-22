@@ -8,7 +8,7 @@ My project can be viewed [here](https://shareyourstory-2017.appspot.com).
 
 Frameworks used:
 
-	* [Bootstrap](getbootstrap.com)
+	* Layout designed using [Bootstrap](getbootstrap.com)
 	* App is built using google app engine
 
 Blog includes:
