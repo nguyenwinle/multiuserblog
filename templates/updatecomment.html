@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<br>
+<br>
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+         
+<h2>{{subject}}</h2>
+<p>{{content}}</p> 
+<h4>Update Comment:</h4>
+          <form method="post">
+            <div class="form-group">
+              <textarea class="form-control" name="comment" rows="5">{{comment}}</textarea>
+            </div>
+
+            {% if error %}
+              <div class="alert alert-danger">
+                {{error}}
+              </div>
+            {% endif %}
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Post</button>
+
+          </form>
+
+      </div>
+    </div>
+{% endblock %}

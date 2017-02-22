@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br>
+<br>
+<br><br>
+  <form method="post">
+    <div class="form-group">
+      <label>Subject</label>
+      <input type="text" name="subject" class="form-control" id="entry-subject" value={{subject}}>
+    </div>
+    <div class="form-group">
+      <label>Content</label>
+      <textarea class="form-control" name="content" rows="3">{{content}}</textarea>
+    </div>
+
+    {% if error %}
+      <div class="alert alert-danger">
+        {{error}}
+      </div>
+    {% endif %}
+
+    <button type="submit" class="btn btn-lg btn-primary btn-block">Post</button>
+
+  </form>
+
+{% endblock %}

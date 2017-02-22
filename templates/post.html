@@ -1,0 +1,25 @@
+<br>
+<br>
+<br>
+<div class ="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+      <a href="/blog/{{p.key().id()}}">{{p.subject}}</a>
+
+  <div class="pull-right">
+  <a href="/blog/{{p.key().id()}}/like">Like</a> 
+  |   
+  <a href="/blog/{{p.key().id()}}/updatepost">Edit</a>
+  |
+  <a href="/blog/{{p.key().id()}}/deletepost">Delete</a>
+    </div>
+  
+  <hr>  
+
+ <div class="panel-body">
+    {{p._render_text | safe}}
+  </div>
+
+</div>
+</div>
+</div>
