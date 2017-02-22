@@ -8,14 +8,14 @@ My project can be viewed [here](https://shareyourstory-2017.appspot.com).
 
 Frameworks used:
 
-	* Layout designed using [Bootstrap](getbootstrap.com)
+	* Layout designed using Bootstrap
 	* App is built using google app engine
 
 Blog includes:
 
-    * Front page that lists blog posts.
+    * Front page that lists blog posts
     * A page to submit story/blog
-    * Story/Blog posts have their own page.
+    * Story/Blog posts have their own page
     * A page to add a comment
 
 User's Features:
