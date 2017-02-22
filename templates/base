@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Udacity Blog</title>
+      <link type="text/css" rel="stylesheet" href="/static/main.css" />
+      <link rel="stylesheet" href="/static/style.css">
+      <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   </head>
+   <body>
+
+      <div class="container">
+         <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">&#9776;</button>
+               <div class="collapse navbar-collapse navHeaderCollapse">
+                    <ul class="nav navbar-nav navbar-right">
+                  <li class="home">
+                     <a href="/">Home</a>
+                  </li>
+                  <li class="active"><a href="">{% if user %}
+                     Welcome, {{user.name}}!
+                     {% else %}
+                     Inspire
+                     {% endif %}
+                     </a>
+                  </li>
+                  {% if user %}
+                  <li class="list__item">
+                     <a href="/newpost">Share your story</a>
+                  </li>
+                  <li class="list__item">
+                     <a href="/logout">Logout</a>
+                  </li>
+                  {% else %}
+                  <li class="list__item">
+                     <a href="/signup">Signup</a>
+                  </li>
+                  <li class="list__item">
+                     <a href="/login">Login</a>
+                  </li>
+                  {% endif %}
+               </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+      <section class="content">
+         <div class="container">
+            {{access_error}}
+            {% block content %}
+            {% endblock %}
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="container">
+            <p>Blog Application made by Nguyen Le</p>
+         </div>
+      </footer>
+      </div>
+   </body>
+   
+</html>
+
+
+
+
+
+
