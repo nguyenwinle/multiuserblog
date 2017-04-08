@@ -1,10 +1,10 @@
-#Multi-User Blog
+# Multi-User Blog
 
 This is a multi-user blog using google app engine that allows users to register/login and add stories and comments to posts. Users can like/unlike users' posts and edit/delete their own posts.
 
 My project can be viewed [here](https://shareyourstory-2017.appspot.com).
 
-##Project Requirements
+## Project Requirements
 
 Frameworks used:
 
@@ -36,7 +36,7 @@ Login:
     * Displays error messages if invalid username/password
 
 
-###Instructions to set up project
+### Instructions to set up project
 
 1. To run this project, install [python 2.7](https://www.python.org/download/releases/2.7/) if needed. 
 
